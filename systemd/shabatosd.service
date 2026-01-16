@@ -1,0 +1,11 @@
+[Unit]
+Description=ShabatOS Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/shabatos/daemon/shabatosd.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
