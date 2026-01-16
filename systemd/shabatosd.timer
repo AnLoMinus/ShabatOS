@@ -1,0 +1,10 @@
+[Unit]
+Description=ShabatOS scheduler timer
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Unit=shabatosd.service
+
+[Install]
+WantedBy=timers.target

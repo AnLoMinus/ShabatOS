@@ -1,0 +1,21 @@
+mode:
+  auto: true
+  pre_shabbat_minutes: 60
+  exit_after_minutes: 1200
+
+lockdown:
+  block_network: true
+  mute_notifications: true
+  allowlist_apps:
+    - /usr/bin/evince
+    - /usr/bin/okular
+    - /usr/bin/gedit
+  denylist_apps:
+    - /usr/bin/firefox
+    - /usr/bin/chromium
+    - /usr/bin/discord
+
+emergency:
+  enabled: true
+  pin_hash: "REPLACE_WITH_HASH"
+  allow_network_minutes: 20
